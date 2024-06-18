@@ -1,0 +1,16 @@
+def smart_style(text):
+    words = text.split()
+    smart_text = ""
+    
+    for i, word in enumerate(words):
+        if i % 2 == 0:
+            smart_text += word.upper() + " "
+        else:
+            smart_text += word.lower() + " "
+    
+    return smart_text
+
+# Example usage
+text = "This is a sample text for smart styling"
+styled_text = smart_style(text)
+print(styled_text)
